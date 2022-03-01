@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        app:menu="@menu/toolbar_settings_menu"
+        app:title="@string/insta_material_toolbar_title"
+        app:titleMarginStart="25dp"
+        app:titleTextAppearance="@style/MyMaterialToolbar.TitleText"
+        app:titleTextColor="@color/black">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:id="@+id/insta_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="65dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/insta_user_image"
+            android:layout_width="81dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/my_image" />
+
+        <TextView
+            android:id="@+id/insta_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/insta_user_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/insta_user_name_size"
+            app:drawableRightCompat="@drawable/tick" />
+
+        <TextView
+            android:id="@+id/insta_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/insta_user_id"
+            android:textSize="@dimen/insta_user_id_dimen" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginTop="-50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_profile_btn"
+                style="@style/MyOutlineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/edit_profile_btn"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/insta_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="15dp"
+                android:contentDescription="@string/insta_list"
+                android:src="@drawable/three_dots" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/user_follower_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insta_user_info"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="-36dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_following_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insta_user_info"
+        android:layout_marginTop="-36dp"
+        android:layout_toEndOf="@id/user_follower_detail"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/horizontal_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/user_following_detail"
+        android:layout_marginHorizontal="25dp"
+        android:background="#D8D5D5" />
+
+    <TextView
+        android:id="@+id/insta_user_description_one"
+        style="@style/InstaUserDescriptionOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_line_divider" />
+
+    <TextView
+        android:id="@+id/insta_user_description_two"
+        style="@style/InstaUserDescriptionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insta_user_description_one" />
+
+    <TextView
+        android:id="@+id/bell_icon_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insta_user_description_two"
+        android:layout_marginHorizontal="25dp"
+        android:text="@string/bell_icon_emoji" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/audio_material_btn"
+        style="@style/MaterialButton.PostedAudios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bell_icon_emoji"
+        android:layout_alignStart="@id/bell_icon_emoji"
+        android:layout_marginStart="10dp"
+        android:text="@string/posted_audios_text"
+        app:backgroundTint="#FFCE33"
+        app:cornerRadius="@dimen/audios_material_btn_corner_radius" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playlist_material_btn"
+        style="@style/MaterialButton.Playlists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insta_user_description_two"
+        android:layout_alignTop="@id/audio_material_btn"
+        android:layout_alignEnd="@id/insta_user_description_two"
+        android:layout_alignBottom="@id/audio_material_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="5dp"
+        android:text="@string/playlists_text"
+        app:backgroundTint="#FBFCFC"
+        app:shapeAppearance="@style/PlaylistsMaterialButtonRoundedCorners" />
+
+    <TextView
+        android:id="@+id/user_follow_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bell_icon_emoji"
+        android:layout_marginStart="25dp" android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/dribble_user_follow_me_on_text_view"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/social_apps_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_follow_details"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-33dp"
+        android:layout_toEndOf="@id/user_follow_details"
+        android:contentDescription="@string/dribble_ui_social_apps_description"
+        android:src="@drawable/insta_twitter_drawables" />
+
+</RelativeLayout>

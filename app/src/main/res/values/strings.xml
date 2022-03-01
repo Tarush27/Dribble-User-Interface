@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UI Demo</string>
+    <string name="insta_material_toolbar_title">Profile</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="insta_user_name">Thomas Jake</string>
+    <string name="insta_user_tick">insta_user_tick</string>
+    <string name="insta_user_id">\u0040d-jake_thomas</string>
+    <string name="bell_icon_emoji">&#128276;</string>
+    <string name="insta_list">insta-list</string>
+    <string name="edit_profile_btn">Edit Profile</string>
+    <string name="insta_user_no_of_followers">837K</string>
+    <string name="insta_user_followers">Followers</string>
+    <string name="insta_user_no_of_following">671</string>
+    <string name="insta_user_following">Following</string>
+    <string name="userFollowerDetail">
+      <![CDATA[
+         <font color="black"><b>837K </b></font> <small>Followers</small>
+      ]]>
+   </string>
+    <string name="userFollowingDetail">
+      <![CDATA[
+         <font color="black"><b>671 </b></font> <small>Following</small>
+      ]]>
+   </string>
+    <string name="user_bell_icon_description">user_bell_icon</string>
+    <string name="posted_audios_text">Posted Audios</string>
+    <string name="playlists_text">Playlists</string>
+    <string name="dribble_user_follow_me_on_text_view">Follow me on :</string>
+    <string name="dribble_ui_social_apps_description">dribble_ui_social_apps</string>
+</resources>
