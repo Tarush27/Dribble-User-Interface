@@ -177,4 +177,45 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        android:id="@+id/music_album_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connect_user_layout"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circular_linear_layout"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/posted_audios_frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_frame_layout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/posted_audios_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/posted_audios_text_view"
+                    style="@style/PostedAudioTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/posted_audios_text" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/playlists_text_view"
+            style="@style/PlaylistsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playlists_text" />
+
+    </LinearLayout>
+
 </RelativeLayout>
