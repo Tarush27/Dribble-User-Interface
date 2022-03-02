@@ -27,4 +27,6 @@
     <string name="playlists_text">Playlists</string>
     <string name="dribble_user_follow_me_on_text_view">Follow me on :</string>
     <string name="dribble_ui_social_apps_description">dribble_ui_social_apps</string>
+    <string name="user_twitter_drawable_src">twitter_drawable</string>
+    <string name="user_instagram_drawable_src">user_instagram_drawable_src</string>
 </resources>
