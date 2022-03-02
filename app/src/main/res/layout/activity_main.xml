@@ -135,5 +135,46 @@
         android:layout_marginHorizontal="25dp"
         android:text="@string/bell_icon_emoji" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connect_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bell_icon_emoji"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/follow_me_on_tv"
+            style="@style/FollowMeOnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dribble_user_follow_me_on_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/user_twitter_drawable_src"
+            android:src="@drawable/twitter_logo"
+            app:layout_constraintLeft_toRightOf="@id/follow_me_on_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/insta_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/user_instagram_drawable_src"
+            android:src="@drawable/insta_drawable"
+            app:layout_constraintLeft_toRightOf="@id/twitter_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
