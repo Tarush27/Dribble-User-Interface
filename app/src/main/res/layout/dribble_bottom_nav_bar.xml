@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bottom_nav_bar"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/dribble_bottom_nav_bar"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/dribble_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:padding="10dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/dribble_search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:src="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/dribble_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/circular_add_image"
+        android:padding="10dp"
+        android:src="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/dribble_music_album"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:padding="10dp"
+        android:src="@drawable/music_album" />
+
+    <TextView
+        android:id="@+id/dribble_profile"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/dribble_bottom_navigation_menu">
+        android:layout_marginStart="14dp"
+        android:padding="8dp"
+        android:text="@string/dribble_user_profile_page"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold" />
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
