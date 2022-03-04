@@ -177,21 +177,22 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/music_album_ll"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/music_album_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_user_layout"
         android:layout_marginHorizontal="33dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circular_linear_layout"
-        android:orientation="horizontal">
+        android:layout_marginTop="18dp"
+        android:background="@drawable/circular_linear_layout">
 
         <FrameLayout
             android:id="@+id/posted_audios_frame_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/circular_frame_layout">
+            android:background="@drawable/circular_frame_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:id="@+id/posted_audios_linear_layout"
@@ -214,16 +215,18 @@
             style="@style/PlaylistsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/playlists_text" />
+            android:text="@string/playlists_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    <include
-        layout="@layout/music_album_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/music_album_ll"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp" />-->
+    <!--    <include
+            layout="@layout/music_album_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/music_album_ll"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp" />-->
 
 </RelativeLayout>
