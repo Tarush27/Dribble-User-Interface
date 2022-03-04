@@ -218,12 +218,12 @@
 
     </LinearLayout>
 
-    <include
+<!--    <include
         layout="@layout/music_album_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/music_album_ll"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp" />-->
 
 </RelativeLayout>
