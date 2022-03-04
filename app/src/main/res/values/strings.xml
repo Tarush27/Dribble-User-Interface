@@ -29,4 +29,10 @@
     <string name="dribble_ui_social_apps_description">dribble_ui_social_apps</string>
     <string name="user_twitter_drawable_src">twitter_drawable</string>
     <string name="user_instagram_drawable_src">user_instagram_drawable_src</string>
+    <string name="music_name_psyco_image_view">Psyco image view</string>
+    <string name="psyco_music_name_text_view">Psyco</string>
+    <string name="at_my_worst_music_name_text_view">At My Worst (feat. Kehlani)</string>
+    <string name="psyco_music_singer_name">Post Malone, Ty Dolla &#36;ign</string>
+    <string name="at_my_worst_music_singer_name">Pink Sweat&#36;, Kehlani</string>
+    <string name="horizontal_list_icon">Horizontal List</string>
 </resources>
