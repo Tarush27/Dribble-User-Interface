@@ -182,8 +182,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_user_layout"
-        android:layout_alignStart="@id/connect_user_layout"
         android:layout_alignEnd="@id/connect_user_layout"
+        android:layout_marginStart="23dp"
         android:layout_marginTop="18dp"
         android:background="@drawable/circular_linear_layout">
 
@@ -217,17 +217,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/playlists_text"
+            app:layout_constraintLeft_toRightOf="@id/posted_audios_frame_layout"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    <include
-            layout="@layout/music_album_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/music_album_ll"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp" />-->
+    <include
+        layout="@layout/music_album_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/music_album_cl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" />
 
 </RelativeLayout>
