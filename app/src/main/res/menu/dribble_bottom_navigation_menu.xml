@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dribble_home"
+        android:icon="@drawable/home"
+        android:title="@string/dribble_home_icon"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dribble_search"
+        android:icon="@drawable/search"
+        android:title="@string/dribble_search_icon"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dribble_add"
+        android:icon="@drawable/add"
+        android:title="@string/dribble_add_icon"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dribble_music_album"
+        android:icon="@drawable/music_album"
+        android:title="@string/dribble_music_album_icon"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dribble_profile"
+        android:title="@string/dribble_user_profile_page"
+        app:showAsAction="always" />
+
+</menu>

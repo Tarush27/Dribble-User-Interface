@@ -35,4 +35,14 @@
     <string name="psyco_music_singer_name">Post Malone, Ty Dolla &#36;ign</string>
     <string name="at_my_worst_music_singer_name">Pink Sweat&#36;, Kehlani</string>
     <string name="horizontal_list_icon">Horizontal List</string>
+    <string name="dribble_home_icon">home</string>
+    <string name="dribble_search_icon">search</string>
+    <string name="dribble_add_icon">add</string>
+    <string name="dribble_music_album_icon">music_album</string>
+    <string name="dribble_user_profile_page">Profile</string>
+    <string name="dribble_profile">Profile</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="add">add</string>
+    <string name="music_album">music_album</string>
 </resources>
