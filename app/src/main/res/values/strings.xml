@@ -40,4 +40,9 @@
     <string name="dribble_add_icon">add</string>
     <string name="dribble_music_album_icon">music_album</string>
     <string name="dribble_user_profile_page">Profile</string>
+    <string name="dribble_profile">Profile</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="add">add</string>
+    <string name="music_album">music_album</string>
 </resources>
