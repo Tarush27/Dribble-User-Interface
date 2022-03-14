@@ -22,9 +22,6 @@ class MainActivity : AppCompatActivity() {
         val userFollowingDetail: TextView = findViewById(R.id.user_following_detail)
         userFollowingDetail.text = fromHtml(getString(R.string.userFollowingDetail))
 
-        val materialToolbar: MaterialToolbar = findViewById(R.id.mt_toolbar)
-        setSupportActionBar(materialToolbar)
-
 
         val musicAlbumRecyclerView: RecyclerView = setUpMusicAlbumRecyclerView()
         val musicPlaylist = createMusicPlaylist()
